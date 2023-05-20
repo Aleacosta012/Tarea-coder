@@ -135,8 +135,7 @@ main {
 .rol {
   height: 50px;
   width: 50px;
-  padding: 0px 20px 0px 20px;
-  margin: 2px;
+  padding: 0px 5px 0px 5px;
   border: solid 1px yellow;
   border-radius: 50%;
 }
@@ -151,13 +150,6 @@ h2 {
   margin: 1px;
 }
 
-#imgRol {
-  display: flex;
-  justify-content: space-around;
-  width: 500px;
-  text-align: center;
-}
-
 #imgAkali {
   width: 500px;
   height: 500px;
@@ -168,9 +160,12 @@ h2 {
   top: -25px;
 }
 
-#roles {
+.container {
   display: flex;
-  flex-direction: column;
+  margin-left: 20px;
+}
+
+#roles {
   position: relative;
   margin-bottom: 150px;
 }
@@ -178,6 +173,7 @@ h2 {
 #vidAkali {
   width: 400px;
   height: 225px;
+  margin-left: 80px;
 }
 
 /*Hasta aca la segunda section*/

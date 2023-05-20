@@ -146,12 +146,12 @@ a{
   .rol {
     height: 50px;
     width: 50px;
-    padding: 0px 20px 0px 20px;
-    margin: 2px;
+    padding: 0px 5px 0px 5px;
     border: solid 1px yellow;
     border-radius: 50%;
   }
-  
+
+
   h2 {
     text-align: center;
     margin-bottom: 2px;
@@ -162,12 +162,6 @@ a{
     margin: 1px;
   }
   
-  #imgRol {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    text-align: center;
-  }
   
   #imgAkali {
     width: 500px;
@@ -178,10 +172,14 @@ a{
     right: 150px;
     top: -25px;
   }
+
+  .container{
+    display: flex;
+    margin-left: 20px;
+
+  }
   
   #roles {
-    display: flex;
-    flex-direction: column;
     position: relative;
     margin-bottom: 150px;
   }
@@ -189,6 +187,7 @@ a{
   #vidAkali {
     width: 400px;
     height: 225px;
+    margin-left: 80px;
   }
   
   /*Hasta aca la segunda section*/
@@ -238,7 +237,7 @@ a{
   }
   
   /*Hasta aca la cuarta section*/
-  
+
   #footer {
     color: white;
     display: flex;
