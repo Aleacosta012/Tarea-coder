@@ -162,7 +162,7 @@ h2 {
 
 .container {
   display: flex;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 
 #roles {
@@ -173,7 +173,7 @@ h2 {
 #vidAkali {
   width: 400px;
   height: 225px;
-  margin-left: 80px;
+  margin-left: 15%;
 }
 
 /*Hasta aca la segunda section*/
