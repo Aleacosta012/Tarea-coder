@@ -4,6 +4,7 @@ body {
 }
 
 header {
+  box-sizing: border-box;
   width: 100%;
   background-color: black;
 }
@@ -147,6 +148,7 @@ main {
 h2 {
   text-align: center;
   margin-bottom: 2px;
+  width: 100%;
 }
 
 #champ {
@@ -154,14 +156,27 @@ h2 {
   margin: 1px;
 }
 
-#imgAkali {
-  width: 500px;
-  height: 500px;
+.chosseChamp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.txt {
+  display: none;
+}
+
+.carrusel {
   border: solid 1px rgb(179, 179, 7);
   border-radius: 50%;
-  position: absolute;
-  right: 150px;
-  top: -25px;
+  margin-left: 10.5%;
+}
+.carrusel .imgCarr {
+  height: 550px;
+}
+
+.rowVid {
+  padding-top: 50px;
+  margin-left: 2%;
 }
 
 .container {
@@ -169,15 +184,10 @@ h2 {
   margin-left: 2%;
 }
 
-#roles {
-  position: relative;
-  margin-bottom: 150px;
-}
-
 #vidAkali {
   width: 400px;
   height: 225px;
-  margin-left: 15%;
+  margin-left: 25%;
 }
 
 /*Hasta aca la segunda section*/
@@ -206,15 +216,15 @@ h2 {
 }
 
 #segundoVideo {
-  width: 100%;
+  width: 99%;
   height: 645px;
   display: block;
-  margin: auto;
+  padding-left: 0.5%;
 }
 
 /*Hasta aca la tercera section*/
 .appCel {
-  width: 150px;
+  width: 140px;
   height: 50px;
 }
 
@@ -245,17 +255,47 @@ h2 {
   border-radius: 40%;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
   .mainContainer {
     height: 450px;
   }
   .mainContainer #jugar1 {
     font-size: 80%;
   }
+  #secNotDest {
+    flex-wrap: wrap;
+  }
+  .not {
+    width: 25%;
+  }
+  .carrusel {
+    width: 35%;
+    height: 80%;
+  }
+  #segundoVideo {
+    height: 560px;
+  }
+  #jugar2 {
+    top: 47.5%;
+    left: 46.6%;
+  }
+  #fondoJugar2 {
+    top: 45.5%;
+    left: 46%;
+  }
 }
 @media (max-width: 992px) {
   .mainContainer {
     display: flex;
+  }
+  .mainContainer #primerVideo {
+    height: 397px;
+  }
+  .mainContainer #imglol {
+    top: 37%;
+  }
+  .fondoJugar {
+    width: 80px;
   }
   #secNotDest {
     flex-wrap: wrap;
@@ -269,22 +309,27 @@ h2 {
   .not h4 {
     font-size: 1.5rem;
   }
-  #imgAkali {
-    width: 30%;
-    height: 100%;
-    top: 10%;
-    left: 55%;
+  .carrusel {
+    width: 36%;
+    margin-top: 10%;
+  }
+  .carrusel .imgCarr {
+    height: 400px;
+  }
+  .rowVid {
+    padding-top: 25px;
   }
   #vidAkali {
     width: 380px;
     height: 215px;
+    margin-left: 2%;
   }
   .rol {
     height: 40px;
     width: 40px;
   }
   .col p {
-    font-size: 0.85rem;
+    font-size: 0.65rem;
   }
   #jugar2 {
     top: 48%;
@@ -293,6 +338,19 @@ h2 {
   #fondoJugar2 {
     top: 46%;
     left: 45%;
+  }
+  #cel h4 {
+    font-size: 1.2rem;
+  }
+  #segundoVideo {
+    height: 480px;
+  }
+  #fondoJugar2 {
+    top: 45%;
+    left: 45.2%;
+  }
+  #jugar2 {
+    top: 47.5%;
   }
 }
 @media (max-width: 768px) {
@@ -316,6 +374,111 @@ h2 {
     display: block;
     margin-top: 80px;
     margin-right: 70%;
+  }
+  .mainContainer {
+    height: 400px;
+  }
+  .mainContainer #primerVideo {
+    height: 307px;
+  }
+  .mainContainer #imglol {
+    width: 20%;
+    height: 15%;
+    top: 42.5%;
+  }
+  .mainContainer #jugar1 {
+    font-size: 0.7rem;
+    top: 60%;
+    left: 45.5%;
+  }
+  .fondoJugar {
+    width: 70px;
+    height: 30px;
+    top: 59%;
+    left: 45%;
+  }
+  #roles {
+    display: none;
+  }
+  .carrusel {
+    margin: 0;
+    position: relative;
+    left: 20%;
+    width: 60%;
+  }
+  .imgNot {
+    width: 225px;
+    height: 225px;
+  }
+  .not p {
+    font-size: 1rem;
+  }
+  .appCel {
+    width: 80px;
+    height: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .mainContainer {
+    height: 300px;
+  }
+  .mainContainer #primerVideo {
+    height: 225px;
+  }
+  .mainContainer #imglol {
+    height: 25%;
+    width: 30%;
+    top: 38%;
+    left: 36%;
+  }
+  .mainContainer #jugar1 {
+    font-size: 0.6rem;
+    top: 63.5%;
+  }
+  #champ {
+    font-size: 3rem;
+  }
+  .fondoJugar {
+    height: 25px;
+    width: 60px;
+    top: 62%;
+    left: 45%;
+  }
+  #secNotDest .imgNot {
+    width: 100px;
+    height: 125px;
+  }
+  #secNotDest .not {
+    width: 70%;
+  }
+  #secNotDest .not p {
+    font-size: 0.7rem;
+  }
+  #secNotDest .not h4 {
+    font-size: 1rem;
+  }
+  #segundoVideo {
+    height: 279px;
+  }
+  #fondoJugar2 {
+    height: 40px;
+    width: 100px;
+    top: 43%;
+    left: 41%;
+  }
+  #jugar2 {
+    top: 45.5%;
+    left: 43%;
+  }
+  #cel h4 {
+    font-size: 0.8rem;
+  }
+  #cel .appCel {
+    width: 70px;
+    height: 25px;
+  }
+  .redSocial {
+    margin-left: 5px;
   }
 }
 
