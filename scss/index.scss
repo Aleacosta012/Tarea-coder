@@ -78,29 +78,31 @@ a{
   main {
     position: relative;
   }
-  
+  .mainContainer{
+    height: 500px;
+  }
   #primerVideo {
     width: 80%;
-    height: 500px;
+    height: 100%;
     display: block;
     margin: auto;
   }
   
   #imglol {
-    width: 300px;
-    height: 150px;
+    width: 22%;
+    height: 25%;
     position: absolute;
-    bottom: 184px;
-    left: 497px;
+    bottom: 36.8%;
+    left: 40.17%;
   }
   
   .fondoJugar {
     background-color: aqua;
-    width: 100px;
-    height: 50px;
+    width: 7.5%;
+    height: 10%;
     position: absolute;
-    top: 305px;
-    left: 597px;
+    top: 61%;
+    left: 46.45%;
     border: solid white 1px;
     border-radius: 10px;
   }
@@ -108,17 +110,18 @@ a{
   #jugar1 {
     color: black;
     position: absolute;
-    left: 605.205px;
-    top: 320px;
+    left: 47%;
+    top: 64%;
     background-color: aqua;
     z-index: 1;
+    font-size: 90%;
   }
   
   /*Hasta aca el main*/
   
   #secNotDest {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   
   .not {
@@ -146,7 +149,6 @@ a{
   .rol {
     height: 50px;
     width: 50px;
-    padding: 0px 5px 0px 5px;
     border: solid 1px yellow;
     border-radius: 50%;
   }
@@ -196,8 +198,8 @@ a{
   #jugar2 {
     color: black;
     position: absolute;
-    left: 605.205px;
-    top: 314px;
+    left: 47%;
+    top: 48%;
     background-color: aqua;
     z-index: 1;
   }
@@ -209,8 +211,8 @@ a{
     border: solid white 1px;
     border-radius: 10px;
     position: absolute;
-    top: 299px;
-    left: 597px;
+    top: 46.4%;
+    left: 46.5%;
   }
   
   #segundoVideos {
@@ -250,6 +252,77 @@ a{
   .redSocial {
     margin: 0px 20px 0px 20px;
   }
+
+  .footUl{
+    list-style: none;
+    display: flex;
+      li{
+        img{
+          border-radius: 40%;
+        }
+      }
+  }
+
+@media(max-width:1120px){
+  .mainContainer{
+    height: 450px;
+      #jugar1{
+        font-size: 80%;
+      }
+
+  }
+}
+
+
+@media(max-width:992px){
+
+  .mainContainer{
+    display: flex;
+  }
+
+
+  #secNotDest{
+    flex-wrap: wrap;
+  }
+
+  .not{
+    width: 60%;
+      p{
+        font-size: 1.5rem;
+      }
+      h4{
+        font-size: 1.5rem;
+      }
+  }
+
+  #imgAkali{
+    width: 30%;
+    height: 100%;
+    top: 10%;
+    left: 55%;
+  }
+  #vidAkali{
+    width: 380px;
+    height: 215px;
+  }
+  .rol{
+    height: 40px;
+    width: 40px;
+  }
+  .col{
+      p{
+        font-size: 0.85rem;
+      }
+  }
+  #jugar2{
+    top:48%;
+    left: 46%;
+  }
+  #fondoJugar2{
+    top: 46%;
+    left: 45%;
+  }
+}
 
 @media (max-width:768px){
 
