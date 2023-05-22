@@ -11,90 +11,92 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img src="../Images/baricon.png" alt="imagen">
+        </label>
+
           <h1>League of legends</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="champs.html">Campeones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="we.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+
+        <div class="navul">
+          <ul >
+            <li class="navli active"><a href="../index.html"">Inicio</a></li>
+            <li class="navli"><a href="champs.html">Campeones</a></li>
+            <li class="navli"><a href="shop.html">Tienda</a></li>
+            <li class="navli"><a href="we.html">Nosotros</a></li>
+            <li class="navli"><a href="contact.html">Contacto</a></li>
+          </ul>
         </div>
       </nav>
     </header>
-    <section>
-      <div>
-        <h2>Los personajes jugables de nuestro juego son:</h2>
-      </div>
-        <nav id="navChamp">
-          <div>
+    <main>
 
+        <h2 class="pjJugables">Los personajes jugables de nuestro juego son:</h2>
+
+        <div id="navChamp">
+          <div class="busc">
             <input type="text" value="Buscar campeón" id="searchChamp">
-          </div>
-          <div >
             
-            <ul >
-              <li class="champClass" id="todos" >Todos</li>
-              <li class="champClass">Asesinos</li>
-              <li class="champClass">Luchadores</li>
-              <li class="champClass">Magos</li>
-              <li class="champClass">Tiradores</li>
-              <li class="champClass">Apoyos</li>
-              <li class="champClass">Tanques</li>
-            </ul>
           </div>
-        </nav>
+          
+        <div class="filtroProductos">
+          
+          <input type="radio" name="selecc" id="todos">
+          <input type="radio" name="selecc" id="asesinos">
+          <input type="radio" name="selecc" id="luchadores">
+          <input type="radio" name="selecc" id="magos">
+          <input type="radio" name="selecc" id="tiradores">
+          <input type="radio" name="selecc" id="apoyos">
+          <input type="radio" name="selecc" id="tanques">
 
-        <main id="champs">
-          <div>
+
+            
+          <ul class="champUl">
+            <label for="todos"><li class="champClass" >Todos</li></label>
+            <label for="asesinos"><li class="champClass">Asesinos</li></label>
+            <label for="luchadores"><li class="champClass">Luchadores</li></label>
+            <label for="magos"><li class="champClass">Magos</li></label>
+            <label for="tiradores"><li class="champClass">Tiradores</li></label>
+            <label for="apoyos"><li class="champClass">Apoyos</li></label>
+            <label for="tanques"><li class="champClass">Tanques</li></label>
+          </ul>
+
+        </div>
+        </div>
+        
+        <div class="champs">
+          <div class="luchadores">
             <img src="../Images/aatrox.jpg" alt="Aatrox" class="champ">
             <p class="pChamp">AATROX</p>
           </div>
 
-          <div>
+          <div class="magos">
             <img src="../Images/ahri.jpg" alt="Ahri" class="champ">
             <p class="pChamp"> AHRI</p>
           </div>
 
-          <div>
+          <div class="asesinos">
             <img src="../Images/akali2.jpg" alt="Akali" class="champ">
             <p class="pChamp">AKALI</p>
           </div>
 
-          <div>
+          <div class="tiradores">
             <img src="../Images/akshan.jpg" alt="Akshan" class="champ">
             <p class="pChamp">AKSHAN</p>
           </div>
 
-          <div>
+          <div class="tanques">
             <img src="../Images/alistar.jpg" alt="Alsitar" class="champ">
             <p class="pChamp">ALISTAR</p>
           </div>
 
+        </div>
+      
 
 
 
-        </main>
-
-    </section>
-  </section>
+      </main>
   
   <section id="segundoVideos">
     <div >
@@ -132,17 +134,17 @@
 
 
 
-    <footer>
-      <div id="footer">
-          <h5>Contactate con nosotoros a traves de nuestra redes sociales</h5>
+<footer>
+  <div id="footer">
+      <h5>Contactate con nosotoros a traves de nuestra redes sociales</h5>
 
-          <ul>
-              <li class="redSocial"><a target="_blank" href="https://www.youtube.com/LeagueofLegendsES"><img width="30px" height="30px"   src="../Images/youtube.jpg" alt="youtube"></a></li>
-              <li class="redSocial"><a target="_blank" href="https://twitter.com/lol_es"><img width="30px" height="30px" src="../Images/twitter.jpg" alt="twitter"></a></li>
-              <li class="redSocial"><a target="_blank" href="https://www.facebook.com/leagueoflegends/?brand_redir=324077981024817&fref=nf"><img width="30px" height="30px" src="../Images/facebook.jpg" alt="facebook"></a></li>
-              <li class="redSocial"><a target="_blank" href="https://www.instagram.com/leagueoflegends/"><img width="30px" height="30px" src="../Images/instagram.jpg" alt="instagram"></a></li>
-          </ul>
-      </div>
-    </footer>
+      <ul class="footUl">
+          <li class="redSocial"><a target="_blank" href="https://www.youtube.com/LeagueofLegendsES"><img width="30px" height="30px"   src="../Images/youtube.jpg" alt="youtube"></a></li>
+          <li class="redSocial"><a target="_blank" href="https://twitter.com/lol_es"><img width="30px" height="30px" src="../Images/twitter.jpg" alt="twitter"></a></li>
+          <li class="redSocial"><a target="_blank" href="https://www.facebook.com/leagueoflegends/?brand_redir=324077981024817&fref=nf"><img width="30px" height="30px" src="../Images/facebook.jpg" alt="facebook"></a></li>
+          <li class="redSocial"><a target="_blank" href="https://www.instagram.com/leagueoflegends/"><img width="30px" height="30px" src="../Images/instagram.jpg" alt="instagram"></a></li>
+      </ul>
+  </div>
+</footer>
   </body>
 </html>
