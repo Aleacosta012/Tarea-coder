@@ -666,6 +666,12 @@ main {
   color: white;
 }
 
+.contactate {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 @media (max-width: 576px) {
   .divContact label {
     width: 150px;
